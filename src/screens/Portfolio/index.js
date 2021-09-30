@@ -33,6 +33,7 @@ import { PortfolioHistoryList } from "./PortfolioHistory";
 
 import FabActions from "../../components/FabActions";
 import LText from "../../components/LText";
+import CheckLanguageAvailability from "../../components/CheckLanguageAvailability";
 
 export { default as PortfolioTabIcon } from "./TabIcon";
 
@@ -180,6 +181,7 @@ export default function PortfolioScreen({ navigation }: Props) {
       ) : null}
 
       <RequireTerms />
+      <CheckLanguageAvailability />
 
       <TrackScreen category="Portfolio" accountsLength={accounts.length} />
 
