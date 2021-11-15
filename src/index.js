@@ -78,7 +78,6 @@ import NotificationsProvider from "./screens/NotificationCenter/NotificationsPro
 import SnackbarContainer from "./screens/NotificationCenter/Snackbar/SnackbarContainer";
 import NavBarColorHandler from "./components/NavBarColorHandler";
 import { setOsTheme, setTheme } from "./actions/settings";
-import FirmwareUpdateBanner from "./components/FirmwareUpdateBanner";
 
 const themes = {
   light: lightTheme,
@@ -454,7 +453,6 @@ export default class Root extends Component<
                                 >
                                   <ButtonUseTouchable.Provider value={true}>
                                     <OnboardingContextProvider>
-                                      <FirmwareUpdateBanner />
                                       <ToastProvider>
                                         <NotificationsProvider>
                                           <SnackbarContainer />
