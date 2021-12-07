@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import * as Animatable from "react-native-animatable";
 import { useTranslation } from "react-i18next";
 import { Flex, Carousel, Text, Link, Button } from "@ledgerhq/native-ui";
-import { Icons } from "@ledgerhq/native-ui/assets";
+import { Icons } from "@ledgerhq/native-ui";
 import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import PlaceholderIllustration from "./PlaceholderIllustration";
 import { ScreenName } from "../../../const";
